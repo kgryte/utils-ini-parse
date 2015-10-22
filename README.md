@@ -30,7 +30,13 @@ out = parse( 'beep boop' );
 // returns <Error>
 ```
 
-The `function` accepts the same `options` as [utils-properties-parse](https://github.com/kgryte/utils-properties-parse), except `sections` is __always__ `true`, `separators` is __always__ `'='`, `strict` is __always__ `true`, and `comments`, by default, begin with `';'`.
+The `function` accepts the same `options` as [utils-properties-parse](https://github.com/kgryte/utils-properties-parse), except
+
+-	`sections` is __always__ `true`.
+-	`separators` is __always__ `'='`.
+-	`strict` is __always__ `true`.
+-	`comments`, by default, begin with `';'`.
+
 
 ``` javascript
 var out = parse( '# This is a comment.\nbeep=boop', {
